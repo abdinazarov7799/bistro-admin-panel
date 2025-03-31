@@ -71,6 +71,14 @@ const TranslationContainer = () => {
             }
         },
         {
+            title: t("En"),
+            key: "En",
+            width: 400,
+            render: (props, data, index) => {
+                return <>{get(findLang(get(data, "languageSourcePs", []), "EN"), "translation")}</>
+            }
+        },
+        {
             title: t("Edit"),
             width: 120,
             fixed: 'right',

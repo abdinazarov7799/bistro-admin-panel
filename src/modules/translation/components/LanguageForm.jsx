@@ -27,10 +27,15 @@ const LanguageForm = ({data,handleCancel,refetch}) => {
                 findLang(get(data, "languageSourcePs", []), "RU"),
                 "translation",
                 ""
+            ),
+            EN: get(
+                findLang(get(data, "languageSourcePs", []), "EN"),
+                "translation",
+                ""
             )
         });
     }, [data]);
-    
+
     const onFinish = (values) => {
         mutate(
             { url: `${URLS.translations_edit}`, attributes: {
@@ -38,6 +43,7 @@ const LanguageForm = ({data,handleCancel,refetch}) => {
                     key: get(data,'key'),
                     textUz: get(values,'UZ'),
                     textRu: get(values,'RU'),
+                    textEn: get(values,'EN'),
                 }},
             {
                 onSuccess: () => {
@@ -80,6 +86,13 @@ const LanguageForm = ({data,handleCancel,refetch}) => {
                 <Form.Item
                     label={t("Rus")}
                     name="RU"
+                >
+                    <TextArea allowClear/>
+                </Form.Item>
+
+                <Form.Item
+                    label={t("English")}
+                    name="EN"
                 >
                     <TextArea allowClear/>
                 </Form.Item>
