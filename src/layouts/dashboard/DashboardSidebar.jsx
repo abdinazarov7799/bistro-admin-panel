@@ -39,18 +39,18 @@ const DashboardSidebar = () => {
             label: t("Variations"),
             key: "/variations",
         },
-        {
-            label: t("Tickets"),
-            key: "/tickets",
-        },
+        // {
+        //     label: t("Tickets"),
+        //     key: "/tickets",
+        // },
         {
             label: t("Constants"),
             key: "/constants",
         },
-        {
-            label: t("Statistics"),
-            key: "/statistics",
-        },
+        // {
+        //     label: t("Statistics"),
+        //     key: "/statistics",
+        // },
         {
             label: t("Translations"),
             key: "/translations",
