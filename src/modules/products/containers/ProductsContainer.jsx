@@ -57,6 +57,11 @@ const ProductsContainer = () => {
             key: "nameRu",
         },
         {
+            title: t("nameEn"),
+            dataIndex: "nameEn",
+            key: "nameEn",
+        },
+        {
             title: t("descriptionUz"),
             dataIndex: "descriptionUz",
             key: "descriptionUz",
@@ -65,6 +70,15 @@ const ProductsContainer = () => {
             title: t("descriptionRu"),
             dataIndex: "descriptionRu",
             key: "descriptionRu",
+        },{
+            title: t("descriptionRu"),
+            dataIndex: "descriptionRu",
+            key: "descriptionRu",
+        },
+        {
+            title: t("descriptionEn"),
+            dataIndex: "descriptionEn",
+            key: "descriptionEn",
         },
         {
             title: t("Category name uz"),
@@ -78,6 +92,13 @@ const ProductsContainer = () => {
             key: 'categoryNameRu',
             render: (props, data, index) => {
                 return get(data,'category.nameRu')
+            }
+        },
+        {
+            title: t("Category name en"),
+            key: 'categoryNameEn',
+            render: (props, data, index) => {
+                return get(data,'category.nameEn')
             }
         },
         {

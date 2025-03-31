@@ -75,6 +75,13 @@ const VariationContainer = () => {
             }
         },
         {
+            title: t("Measure name en"),
+            key: "measureEn",
+            render: (props, data, index) => {
+                return  get(props,'measureUnit.nameEn')
+            }
+        },
+        {
             title: t("Product name uz"),
             key: "productRu",
             render: (props, data, index) => {
@@ -86,6 +93,13 @@ const VariationContainer = () => {
             key: "productRu",
             render: (props, data, index) => {
                 return  get(props,'product.nameRu')
+            }
+        },
+        {
+            title: t("Product name en"),
+            key: "productEn",
+            render: (props, data, index) => {
+                return  get(props,'product.nameEn')
             }
         },
         {

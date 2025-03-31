@@ -56,6 +56,11 @@ const BranchContainer = () => {
             key: "nameRu",
         },
         {
+            title: t("nameEn"),
+            dataIndex: "nameEn",
+            key: "nameEn",
+        },
+        {
             title: t("addressUz"),
             dataIndex: "addressUz",
             key: "addressUz",
@@ -64,6 +69,11 @@ const BranchContainer = () => {
             title: t("addressRu"),
             dataIndex: "addressRu",
             key: "addressRu",
+        },
+        {
+            title: t("addressEn"),
+            dataIndex: "addressEn",
+            key: "addressEn",
         },
         {
             title: t("openingTime"),

@@ -56,6 +56,11 @@ const MeasureContainer = () => {
             key: "nameRu",
         },
         {
+            title: t("nameEn"),
+            dataIndex: "nameEn",
+            key: "nameEn",
+        },
+        {
             title: t("Edit / Delete"),
             width: 120,
             fixed: 'right',

@@ -22,6 +22,7 @@ const CreateEditMeasure = ({itemData,setIsModalOpen,refetch}) => {
         form.setFieldsValue({
             nameUz: get(itemData,'nameUz'),
             nameRu: get(itemData,'nameRu'),
+            nameEn: get(itemData,'nameEn'),
         });
     }, [itemData]);
 
@@ -71,6 +72,14 @@ const CreateEditMeasure = ({itemData,setIsModalOpen,refetch}) => {
                 <Form.Item
                     label={t("nameRu")}
                     name="nameRu"
+                    rules={[{required: true,}]}
+                >
+                    <Input />
+                </Form.Item>
+
+                <Form.Item
+                    label={t("nameEn")}
+                    name="nameEn"
                     rules={[{required: true,}]}
                 >
                     <Input />

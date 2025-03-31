@@ -27,8 +27,10 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
         form.setFieldsValue({
             nameUz: get(itemData,'nameUz'),
             nameRu: get(itemData,'nameRu'),
+            nameEn: get(itemData,'nameEn'),
             addressUz: get(itemData,'addressUz'),
             addressRu: get(itemData,'addressRu'),
+            addressEn: get(itemData,'addressEn'),
             lat: get(itemData,'lat'),
             lon: get(itemData,'lon'),
         });
@@ -92,6 +94,14 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
                 </Form.Item>
 
                 <Form.Item
+                    label={t("nameEn")}
+                    name="nameEn"
+                    rules={[{required: true,}]}
+                >
+                    <Input />
+                </Form.Item>
+
+                <Form.Item
                     label={t("addressUz")}
                     name="addressUz"
                     rules={[{required: true,}]}
@@ -102,6 +112,14 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
                 <Form.Item
                     label={t("addressRu")}
                     name="addressRu"
+                    rules={[{required: true,}]}
+                >
+                    <TextArea />
+                </Form.Item>
+
+                <Form.Item
+                    label={t("addressEn")}
+                    name="addressEn"
                     rules={[{required: true,}]}
                 >
                     <TextArea />

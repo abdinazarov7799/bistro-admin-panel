@@ -57,6 +57,11 @@ const CategoryContainer = () => {
             key: "nameRu",
         },
         {
+            title: t("nameEn"),
+            dataIndex: "nameEn",
+            key: "nameEn",
+        },
+        {
             title: t("descriptionUz"),
             dataIndex: "descriptionUz",
             key: "descriptionUz",
@@ -65,6 +70,11 @@ const CategoryContainer = () => {
             title: t("descriptionRu"),
             dataIndex: "descriptionRu",
             key: "descriptionRu",
+        },
+        {
+            title: t("descriptionEn"),
+            dataIndex: "descriptionEn",
+            key: "descriptionEn",
         },
         {
             title: t("Image"),

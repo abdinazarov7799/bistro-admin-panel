@@ -32,8 +32,10 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
         form.setFieldsValue({
             nameUz: get(itemData,'nameUz'),
             nameRu: get(itemData,'nameRu'),
+            nameEn: get(itemData,'nameEn'),
             descriptionUz: get(itemData,'descriptionUz'),
             descriptionRu: get(itemData,'descriptionRu'),
+            descriptionEn: get(itemData,'descriptionEn'),
             number: get(itemData,'number')
         });
         setImgUrl(get(itemData,'imageUrl'));
@@ -135,6 +137,14 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
                 </Form.Item>
 
                 <Form.Item
+                    label={t("nameEn")}
+                    name="nameEn"
+                    rules={[{required: true,}]}
+                >
+                    <Input />
+                </Form.Item>
+
+                <Form.Item
                     label={t("descriptionUz")}
                     name="descriptionUz"
                     rules={[{required: true,}]}
@@ -145,6 +155,14 @@ const CreateEditCategory = ({itemData,setIsModalOpen,refetch}) => {
                 <Form.Item
                     label={t("descriptionRu")}
                     name="descriptionRu"
+                    rules={[{required: true,}]}
+                >
+                    <TextArea />
+                </Form.Item>
+
+                <Form.Item
+                    label={t("descriptionEn")}
+                    name="descriptionEn"
                     rules={[{required: true,}]}
                 >
                     <TextArea />
